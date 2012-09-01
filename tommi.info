@@ -1,64 +1,35 @@
-name = Tommi
-description = Default XHTML starterkit for <a href="http://drupal.org/project/omega">Omega</a>. You should not directly edit this starterkit, but make your own copy. Information on this can be found in the <a href="http://himer.us/omega-docs">Omega Documentation</a>.
-core = 7.x
-engine = phptemplate
-screenshot = screenshot.png
-base theme = omega
-
-; IMPORTANT: DELETE THESE TWO LINES IN YOUR SUBTHEME
-
-
-; REQUIRED CORE REGIONS
-
-regions[page_top] = Page Top
-regions[page_bottom] = Page Bottom
-regions[content] = Content
-
-; ADDITIONAL REGIONS
-
-regions[user_first] = User Bar First
-regions[user_second] = User Bar Second
-
-regions[branding] = Branding
-regions[menu] = Menu
-
-; regions[sidebar_first] = Sidebar First
-; regions[sidebar_second] = Sidebar Second
-
-regions[header_first] = Header First
-regions[header_second] = Header Second
-
-; regions[preface_first] = Preface First
-; regions[preface_second] = Preface Second
-; regions[preface_third] = Preface Third
-
-regions[postscript_first] = Postscript First
-regions[postscript_second] = Postscript Second
-regions[postscript_third] = Postscript Third
-regions[postscript_fourth] = Postscript Fourth
-
-regions[footer_first] = Footer First
-regions[footer_second] = Footer Second
-
-; ZONES
-
-zones[user] = User
-zones[branding] = Branding
-zones[menu] = Menu
-zones[header] = Header
-zones[preface] = Preface
-zones[content] = Content
-zones[postscript] = Postscript
-zones[footer] = Footer
-
-; OPTIONAL STYLESHEETS
-
-css[global.css][name] = Your custom global styles
-css[global.css][description] = This file holds all the globally active custom CSS of your theme.
-css[global.css][options][weight] = 10
-
-; THEME SETTINGS (DEFAULTS)
-
+name = 'Tommi'
+description = 'Default XHTML starterkit for <a href="http://drupal.org/project/omega">Omega</a>. You should not directly edit this starterkit, but make your own copy. Information on this can be found in the <a href="http://himer.us/omega-docs">Omega Documentation</a>.'
+core = '7.x'
+engine = 'phptemplate'
+screenshot = 'screenshot.png'
+base theme = 'omega'
+regions[page_top] = 'Page Top'
+regions[page_bottom] = 'Page Bottom'
+regions[content] = 'Content'
+regions[user_first] = 'User Bar First'
+regions[user_second] = 'User Bar Second'
+regions[branding] = 'Branding'
+regions[menu] = 'Menu'
+regions[header_first] = 'Header First'
+regions[header_second] = 'Header Second'
+regions[postscript_first] = 'Postscript First'
+regions[postscript_second] = 'Postscript Second'
+regions[postscript_third] = 'Postscript Third'
+regions[postscript_fourth] = 'Postscript Fourth'
+regions[footer_first] = 'Footer First'
+regions[footer_second] = 'Footer Second'
+zones[user] = 'User'
+zones[branding] = 'Branding'
+zones[menu] = 'Menu'
+zones[header] = 'Header'
+zones[preface] = 'Preface'
+zones[content] = 'Content'
+zones[postscript] = 'Postscript'
+zones[footer] = 'Footer'
+css[global.css][name] = 'Your custom global styles'
+css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
+css[global.css][options][weight] = '10'
 settings[alpha_grid] = 'alpha_default'
 settings[alpha_primary_alpha_default] = 'normal'
 settings[alpha_responsive] = '1'
@@ -372,12 +343,9 @@ settings[alpha_region_footer_second_columns] = '12'
 settings[alpha_region_footer_second_suffix] = ''
 settings[alpha_region_footer_second_weight] = '2'
 settings[alpha_region_footer_second_css] = ''
-
-scripts[]=js/swipe.min.js
-scripts[]=js/script.js
-; Information added by drupal.org packaging script on 2012-02-19
-version = "7.x-3.1"
-core = "7.x"
-project = "omega"
-datestamp = "1329681647"
+scripts[0] = 'js/swipe.min.js'
+scripts[1] = 'js/script.js'
+version = '7.x-3.1'
+project = 'omega'
+datestamp = '1329681647'
 
