@@ -1,0 +1,178 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+.white-bg {
+  background: #fff;
+}
+
+.panel-flexible {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.swipe-slider li {
+  display: none;
+}
+
+.swipe-slider li:first-child {
+  display: block;
+}
+
+body {
+  background: url(../images/rebel.png) top left;
+}
+
+ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li {
+  float: left;
+  width: auto;
+}
+
+ul.nice-menu-down {
+  width: 100%;
+  margin: 10px 0;
+}
+
+ul.nice-menu-down li {
+  width: 19.5%;
+  margin-left: 3px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+#page-title {
+  display: none;
+}
+
+ul.nice-menu-down li li,
+ul.nice-menu-down li ul {
+  width: 100%;
+  margin-left: -0.5px;
+}
+
+.branding-data {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+ul.nice-menu-down li.menuparent {
+  background-color: #fff;
+}
+
+ul.nice-menu-down li.menuparent:hover {
+  background-color: #ddd;
+}
+
+body ul.nice-menu-down li:hover {
+  background: #ddd;
+}
+
+body ul.nice-menu-down li:hover a,
+body ul.nice-menu-down li a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul.nice-menu-down li.active-trail {
+  background: #666;
+  color: #fff;
+  border-color: #666;
+}
+
+ul.nice-menu-down li.active-trail a {
+  color: #fff;
+}
+
+.breadcrumb {
+  padding: 2px 5px;
+  background: #fff;
+  border-radius: 3px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#region-footer-first {
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+#region-footer-first ul.nice-menu-down li {
+  background: #fff !important;
+  border: 0 !important;
+}
+
+#region-footer-first ul.nice-menu-down ul {
+  display: block !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: 0 !important;
+  border: 0 !important;
+}
+
+#region-footer-first ul.nice-menu-down li.active-trail a {
+  color: #000 !important;
+}
+
+#block-nice-menus-2 {
+  width: 80%;
+  float: left;
+}
+
+#block-block-1 {
+  float: right;
+  margin: 20px 20px 0 0;
+}
+
+#block-block-1 p {
+  line-height: 1em;
+  font-size: 8em;
+}
+
+.pane-node-title {
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 10px 0 30px 0;
+}
+
+#animalList .views-row {
+  float: left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+
+#animalList .views-row a{
+  text-decoration: none;
+  color: #000;
+}
+
+#animalList .views-row a:hover {
+  text-decoration: underline;
+}
+
+.panels-flexible-region-animalPage-sidebar-inside {
+}
+
+.view-animal-list .item-list ul li {
+  margin-left: 0;
+  text-align: center;
+}
+
+.view-animal-list .item-list ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.view-animal-list .item-list ul li a:hover {
+  text-decoration: underline;
+}
+
+.animalPage-white-bg-main-row-middle .panels-flexible-region {
+  border-left: 1px solid #ccc;
+  margin-left: 5px;
+}
+
+.animalPage-white-bg-main-row-right img {
+  width: 100%;
+}
