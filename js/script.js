@@ -5,4 +5,6 @@ jQuery('ready',function() {
       auto: 3000
     }
   );
+
+  jQuery('#main-menu span').parent().click(function() { jQuery(this).find('ul').toggle() });
 });

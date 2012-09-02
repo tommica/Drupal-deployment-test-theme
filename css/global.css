@@ -22,65 +22,62 @@ body {
   background: url(../images/rebel.png) top left;
 }
 
-ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li {
-  float: left;
-  width: auto;
-}
-
-ul.nice-menu-down {
-  width: 100%;
-  margin: 10px 0;
-}
-
-ul.nice-menu-down li {
-  width: 19.5%;
-  margin-left: 3px;
-  background: #fff;
-  border-radius: 3px;
-}
-
 #page-title {
   display: none;
 }
 
-ul.nice-menu-down li li,
-ul.nice-menu-down li ul {
+ul#main-menu {
+  padding-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
-  margin-left: -0.5px;
+  float: left;
+  position: relative;
+  z-index: 99;
 }
 
-.branding-data {
-  background: #fff;
-  padding: 10px;
-  border-radius: 3px;
+ul#main-menu li {
+  width: 18%;
+  margin-left: 3px;
+  float: left;
+  position: relative;
 }
 
-ul.nice-menu-down li.menuparent {
-  background-color: #fff;
-}
-
-ul.nice-menu-down li.menuparent:hover {
-  background-color: #ddd;
-}
-
-body ul.nice-menu-down li:hover {
-  background: #ddd;
-}
-
-body ul.nice-menu-down li:hover a,
-body ul.nice-menu-down li a {
+ul#main-menu li a {
   color: #000;
   text-decoration: none;
 }
 
-ul.nice-menu-down li.active-trail {
-  background: #666;
-  color: #fff;
-  border-color: #666;
+ul#main-menu li a:hover {
+  background: #ccc;
 }
 
-ul.nice-menu-down li.active-trail a {
-  color: #fff;
+ul#main-menu li a.active {
+  background: #aaa !important;
+}
+
+
+ul#main-menu li span,
+ul#main-menu li a {
+  cursor: pointer;
+  width: 100%;
+  float: left;
+  background: #fff;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+ul#main-menu li ul {
+  position: absolute;
+  top: 19px;
+  left: -3px;
+  display: none;
+  width: 95.4%;
+}
+
+ul#main-menu li ul li {
+  display: block;
+  clear: both;
+  width: 100%;
 }
 
 .breadcrumb {
@@ -176,3 +173,10 @@ ul.nice-menu-down li.active-trail a {
 .animalPage-white-bg-main-row-right img {
   width: 100%;
 }
+
+.branding-data {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+

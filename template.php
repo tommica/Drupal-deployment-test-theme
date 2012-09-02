@@ -10,3 +10,24 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+
+function tommi_menu_tree__main_menu($variables) {
+  return '<ul id="main-menu" class="links inline clearfix main-menu">' . $variables['tree'] . '</ul>';
+}
+
+function tommi_menu_link__main_menu(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  if($element['#href'] === '<nolink>') {
+    $output = "<span>".$element['#title']."</span>";
+  } else {
+    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  }
+
+  $element['#attributes']['class'][] = 'menu-'.$element['#original_link']['mlid'];
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
